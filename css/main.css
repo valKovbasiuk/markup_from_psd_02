@@ -51,6 +51,14 @@ footer,header,hgroup,menu,nav,section {
     max-width: 1368px;
 }
 
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
 section {
     position: relative;
     max-width: 1368px;
@@ -211,6 +219,19 @@ img[alt="collegues"] {
     margin-left: 0;
     }
 
+#about_our_projec strong {
+
+    }
+
+#about_our_projec p {
+        
+    }
+
+
+#see_our_project li {
+    width: 33%;
+}
+
 .center-container {
     position: relative;
     white-space: nowrap;
@@ -306,4 +327,63 @@ ul li a {
 
 /* end of footer */
 
+.presentation {
+    padding: 15px;
+}
 
+
+/* ribbon */
+
+.box {
+    position: relative;
+    max-width: 600px;
+    width: 90%;
+    height: 400px;
+    background: #fff;
+  }
+  
+  .ribbon-left {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+  }
+  .ribbon-right {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+  }
+  
+  .ribbon-left span {
+    position: absolute;
+    display: block;
+    width: 225px;
+    padding: 15px 0;
+    background-color: var(--links-active-blue);
+    color: #fff;
+    font: 700 18px/1 'Lato', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    right: -25px;
+    top: 30px;
+    transform: rotate(-45deg);
+  }
+  
+  .ribbon-right span {
+    position: absolute;
+    display: block;
+    width: 225px;
+    padding: 15px 0;
+    background-color: var(--links-active-blue);
+    color: #fff;
+    font: 700 18px/1 'Lato', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    left: -25px;
+    top: 30px;
+    transform: rotate(45deg);
+  }
+
+  /* end of ribbon */
