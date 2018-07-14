@@ -6,46 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Your project</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 <body>
-    <header>   
-
-
-        <h1 id="logo"><a href="#"><img src="#" alt="company logo"></a></h1>
-        <nav>
-            <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">pages</a></li>
-                <li><a href="#">shortcodes</a></li>
-                <li><a href="#">blog</a></li>
-                <li><a href="#">portfolio</a></li>
-                <li><a href="#">contact</a></li>
-                <li><a href="#">shop</a></li>
-                <li id="search"><a href="#"><img src="./assets/search-solid.svg" alt="search" data-copyright="fontawesome.com"></a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="header-container">
+            <h1 id="logo"><a href="#"><img src="#" alt="company logo" hidden>your logo</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">pages</a></li>
+                    <li><a href="#">shortcodes</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">portfolio</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">shop</a></li>
+                    <li id="search"><a href="#"><img class="icon" src="./assets/search-solid.svg" alt="search" data-copyright="fontawesome.com"></a></li>
+                </ul>
+            </nav>
+        </div>   
     </header>
     <main>
+
         <section id="start_your_project">
             <img src="./assets/face_to_face.jpg" alt="collegues">
-            <h2>start your project</h2>
-            <p>conference event day 2017</p>
+            <div class="center-container">
+                <h2>start your project</h2>
+                <h3>conference event day 2017</h3>
 
-            <ul id="countdown">
-                <li id="days"></li><p>days</p>
-                <li id="hours"></li><p>hours</p>
-                <li id="mins"></li><p>mins</p>
-                <li id="secs"></li><p>secs</p>
-            </ul>
+                <table id="countdown">
+                    <tr>
+                        <td id="days" class="digits">29</td>
+                        <td>:</td>
+                        <td id="hours" class="digits">02</td>
+                        <td>:</td>
+                        <td id="mins" class="digits">16</td>
+                        <td>:</td>
+                        <td id="secs" class="digits">50</td>
+                    </tr>
+                    <tr id="names">
+                        <td>days</td>
+                        <td></td>
+                        <td>hours</td>
+                        <td></td>
+                        <td>mins</td>
+                        <td></td>
+                        <td>secs</td>
 
-            <div>
-                <div><a href="#">take a tour</a></div>
-                <div><a href="#">purchase</a></div>
+                    </tr>>
+                </table>
+
+                <div>
+                    <a class="button" href="#">take a tour</a>
+                    <a class="button" href="#">purchase</a>
+                </div>
             </div>
-
         </section>
-        <section id="about_our_project">
-            <article>
+
+        <section class="base_width" id="about_our_project">
+            <article class="flex">
                 <div>
                     <h3>About our project</h3>
                     <strong>We are here to make your dream comes true by your own way.</strong>
@@ -63,27 +82,27 @@
             our projects
             <section>
                 <ul>
-                    <li><a href="#"><img src="./assets/microphone-solid.svg" alt="mic"  data-copyright="fontawesome.com"></a>
+                    <li class="round_button"><a href="#"><img class="icon" src="./assets/microphone-solid.svg" alt="mic"  data-copyright="fontawesome.com"></a>
                     <h6>time to project</h6><p>August 30th 2017 at 7 p.m.</p>
                     </li>
-                    <li><a href="#"><img src="./assets/map-marker-alt-solid.svg" alt="pinpoint" data-copyright="fontawesome.com"></a>
+                    <li class="round_button"><a href="#"><img class="icon" src="./assets/map-marker-alt-solid.svg" alt="pinpoint" data-copyright="fontawesome.com"></a>
                     <h6>event place</h6><p>Nobinagar Savar,Dhaka</p>
                     </li>
-                    <li><a href="#"><img src="./assets/bullhorn-solid.svg" alt="speaker" data-copyright="fontawesome.com"></a>
+                    <li class="round_button"><a href="#"><img class="icon" src="./assets/bullhorn-solid.svg" alt="speaker" data-copyright="fontawesome.com"></a>
                     <h6>the speakers</h6><p>UI/UX All Subject</p>    
                     </li>
-                    <li><a href="#"><img src="./assets/ticket-alt-solid.svg" alt="ticket" data-copyright="fontawesome.com"></a>
+                    <li class="round_button"><a href="#"><img class="icon" src="./assets/ticket-alt-solid.svg" alt="ticket" data-copyright="fontawesome.com"></a>
                     <h6>1000 tickets</h6><p>Signup to take a place now</p>
                     </li>
                 </ul>
-                <div id="promo_video"></div>
+                <section id="see_our_project"></section>
                 <ul>
-                    <li><img src="./assets/logo_1.png" alt="project logo"></li>
-                    <li><img src="./assets/logo_2.png" alt="project logo"></li>
-                    <li><img src="./assets/logo_3.png" alt="project logo"></li>
-                    <li><img src="./assets/logo_4.png" alt="project logo"></li>
-                    <li><img src="./assets/logo_5.png" alt="project logo"></li>
-                    <li><img src="./assets/logo_6.png" alt="project logo"></li>
+                    <li><a href="#"><img src="./assets/logo_1.png" alt="project logo"></a></li>
+                    <li><a href="#"><img src="./assets/logo_2.png" alt="project logo"></a></li>
+                    <li><a href="#"><img src="./assets/logo_3.png" alt="project logo"></a></li>
+                    <li><a href="#"><img src="./assets/logo_4.png" alt="project logo"></a></li>
+                    <li><a href="#"><img src="./assets/logo_5.png" alt="project logo"></a></li>
+                    <li><a href="#"><img src="./assets/logo_6.png" alt="project logo"></a></li>
                 </ul>
             </section>
 
@@ -99,10 +118,10 @@
                                     <h6 class="name">Bob Dillan</h6>
                                     <p class="position">pr</p>
                                     <ul class="social">
-                                        <li><a href="#"><img src="./assets/fb.svg" alt="facebook"></a></li>
-                                        <li><a href="#"><img src="./assets/twitter.svg" alt="twitter"></a></li>
-                                        <li><a href="#"><img src="./assets/instagramm.svg" alt="instagramm"></a></li>
-                                        <li><a href="#"><img src="./assets/web.svg" alt="web"></a></li>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-basketball-ball"></i></a></li>
                                     </ul>
                                 </figcaption>
                             </figure>
@@ -114,10 +133,10 @@
                                     <h6 class="name">masud rana</h6>
                                     <p class="position">CEO from Management</p>
                                     <ul class="social">
-                                        <li><a href="#"><img src="./assets/fb.svg" alt="facebook"></a></li>
-                                        <li><a href="#"><img src="./assets/twitter.svg" alt="twitter"></a></li>
-                                        <li><a href="#"><img src="./assets/instagramm.svg" alt="instagramm"></a></li>
-                                        <li><a href="#"><img src="./assets/web.svg" alt="web"></a></li>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-basketball-ball"></i></a></li>
                                     </ul>
                                 </figcaption>
                             </figure>
@@ -129,10 +148,10 @@
                                     <h6 class="name">Tim Cook</h6>
                                     <p class="position">CTO</p>
                                     <ul class="social">
-                                        <li><a href="#"><img src="./assets/fb.svg" alt="facebook"></a></li>
-                                        <li><a href="#"><img src="./assets/twitter.svg" alt="twitter"></a></li>
-                                        <li><a href="#"><img src="./assets/instagramm.svg" alt="instagramm"></a></li>
-                                        <li><a href="#"><img src="./assets/web.svg" alt="web"></a></li>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-basketball-ball"></i></a></li>
                                     </ul>
                                 </figcaption>
                             </figure>
@@ -144,6 +163,22 @@
 
 
             <section id="project_schedule">
+                <!-- days -->
+                <nav>
+                    <ul>
+                        <li><a href="#">day 1</a></li>
+                        <li><a href="#">day 2</a></li>
+                        <li><a href="#">day 3</a></li>
+                    </ul>
+                </nav>
+
+
+                <!-- events -->
+
+
+
+
+
 
             </section>
 
@@ -175,23 +210,25 @@
                 </article>
 
             </section>
-            
-            <footer>
-
-            </footer>
 
         </section>
     </main>
     <footer>
-        <div id="copyright"></div>
-        <ul id="social">
-            <li id=""><a href="#"><img src="" alt="facebook"></a></li>
-            <li id=""><a href="#"><img src="" alt="twitter"></a></li>
-            <li id=""><a href="#"><img src="" alt="pinterest"></a></li>
-            <li id=""><a href="#"><img src="" alt="linkedin"></a></li>
-            <li id=""><a href="#"><img src="" alt="instagramm"></a></li>
-        </ul>
-
+        <nav class="grey-box">
+            <div class="w1368">
+                
+            </div>
+        </nav>
+        <nav class="dark-grey-box">
+            <div id="copyright">All Right Reserved. Designed by Masud Rana</div>
+            <ul id="social">
+                <li id=""><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li id=""><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li id=""><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                <li id=""><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li id=""><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>
