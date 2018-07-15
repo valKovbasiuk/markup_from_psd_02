@@ -10,8 +10,8 @@
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <h1 id="logo"><a href="#"><img src="#" alt="company logo" hidden>your logo</a></h1>
+        <div class="base_container flex_row base_padding">
+            <h1 id="logo"><a href="#">your logo</a></h1>
             <nav>
                 <ul>
                     <li><a href="#">home</a></li>
@@ -27,13 +27,12 @@
         </div>   
     </header>
     <main>
-
-        <section id="start_your_project">
+        <section id="start_your_project" class="base_container">
             <img src="./assets/face_to_face.jpg" alt="collegues">
             <div class="center-container">
                 <h2>start your project</h2>
                 <h3>conference event day 2017</h3>
-
+                
                 <table id="countdown">
                     <tr>
                         <td id="days" class="digits">29</td>
@@ -63,10 +62,10 @@
             </div>
         </section>
 
-        <section class="base_width" id="about_our_project">
-            <article class="flex">
+        <section class="base_container base_padding flex_row" id="about_our_project">
+            <article class="flex_row">
                 <div>
-                    <h3>About our project</h3>
+                    <h2>About our project</h2>
                     <strong>We are here to make your dream comes true by your own way.</strong>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim augue.</p>
                     <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis seacula quarta decima decima sollemnes in futurum.</p>
@@ -78,45 +77,43 @@
                 </div>
             </article>            
         </section>
-        <section id="our_projects">
-            our projects
-            <section>
-                <ul class="flex">
-                    <li class="flex"><a class="round_button" href="#"><img class="icon" src="./assets/microphone-solid.svg" alt="mic"  data-copyright="fontawesome.com"></a>
-                    <h6>time to project</h6><p>August 30th 2017 at 7 p.m.</p>
-                    </li>
-                    <li class="flex"><a class="round_button" href="#"><img class="icon" src="./assets/map-marker-alt-solid.svg" alt="pinpoint" data-copyright="fontawesome.com"></a>
-                    <h6>event place</h6><p>Nobinagar Savar,Dhaka</p>
-                    </li>
-                    <li class="flex"><a class="round_button" href="#"><img class="icon" src="./assets/bullhorn-solid.svg" alt="speaker" data-copyright="fontawesome.com"></a>
-                    <h6>the speakers</h6><p>UI/UX All Subject</p>    
-                    </li>
-                    <li class="flex"><a class="round_button" href="#"><img class="icon" src="./assets/ticket-alt-solid.svg" alt="ticket" data-copyright="fontawesome.com"></a>
-                    <h6>1000 tickets</h6><p>Signup to take a place now</p>
-                    </li>
-                </ul>
-                <section id="see_our_project">
-                    <div>
-                        <img src="./assets/presentation_man.png" alt="video">
-                        <title>see our project</title>
-                        <div class="play_button"></div>
-                    </div>                    
-                </section>
-                <ul class="flex">
-                    <li><a href="#"><img src="./assets/logo_1.png" alt="project logo"></a></li>
-                    <li><a href="#"><img src="./assets/logo_2.png" alt="project logo"></a></li>
-                    <li><a href="#"><img src="./assets/logo_3.png" alt="project logo"></a></li>
-                    <li><a href="#"><img src="./assets/logo_4.png" alt="project logo"></a></li>
-                    <li><a href="#"><img src="./assets/logo_5.png" alt="project logo"></a></li>
-                    <li><a href="#"><img src="./assets/logo_6.png" alt="project logo"></a></li>
-                </ul>
+        <section class="base_container base_padding" id="our_projects">
+            <ul class="flex_row">
+                <li class="flex_column"><a class="round_button" href="#"><img class="icon" src="./assets/microphone-solid.svg" alt="mic"  data-copyright="fontawesome.com"></a>
+                <h6>time to project</h6><p>August 30th 2017 at 7 p.m.</p>
+                </li>
+                <li class="flex_column"><a class="round_button" href="#"><img class="icon" src="./assets/map-marker-alt-solid.svg" alt="pinpoint" data-copyright="fontawesome.com"></a>
+                <h6>event place</h6><p>Nobinagar Savar,Dhaka</p>
+                </li>
+                <li class="flex_column"><a class="round_button" href="#"><img class="icon" src="./assets/bullhorn-solid.svg" alt="speaker" data-copyright="fontawesome.com"></a>
+                <h6>the speakers</h6><p>UI/UX All Subject</p>    
+                </li>
+                <li class="flex_column"><a class="round_button" href="#"><img class="icon" src="./assets/ticket-alt-solid.svg" alt="ticket" data-copyright="fontawesome.com"></a>
+                <h6>1000 tickets</h6><p>Signup to take a place now</p>
+                </li>
+            </ul>
+            <section id="see_our_project">
+                <div>
+                    <img src="./assets/presentation_man.png" alt="video">
+                    <title>see our project</title>
+                    <div class="play_button"></div>
+                </div>                    
             </section>
+            <ul class="base_container base_padding flex_row">
+                <li><a href="#"><img src="./assets/logo_1.png" alt="project logo"></a></li>
+                <li><a href="#"><img src="./assets/logo_2.png" alt="project logo"></a></li>
+                <li><a href="#"><img src="./assets/logo_3.png" alt="project logo"></a></li>
+                <li><a href="#"><img src="./assets/logo_4.png" alt="project logo"></a></li>
+                <li><a href="#"><img src="./assets/logo_5.png" alt="project logo"></a></li>
+                <li><a href="#"><img src="./assets/logo_6.png" alt="project logo"></a></li>
+            </ul>
+        </section>
 
 
-            <section id="our_member">
+        <section id="our_member">
+            <div class="base_container base_padding">
                 <h2>our member</h2>
-                <section>
-                    <ul>
+                    <ul class="flex_row flex_space_between">
                         <li class="head_shot_with_contacts">
                             <figure>
                                 <img src="./assets/nice_guy_3.jpg" alt="member photo">
@@ -125,8 +122,8 @@
                                     <p class="position">pr</p>
                                     <ul class="social">
                                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                                         <li><a href="#"><i class="fas fa-basketball-ball"></i></a></li>
                                     </ul>
                                 </figcaption>
@@ -163,12 +160,13 @@
                             </figure>
                         </li>
                     </ul>
-                </section>
+            </div>
 
-            </section>
+        </section>
 
 
-            <section id="project_schedule">
+        <section id="project_schedule">
+            <div class="base_container base_padding">
                 <!-- days -->
                 <nav>
                     <ul>
@@ -177,10 +175,10 @@
                         <li><a href="#">day 3</a></li>
                     </ul>
                 </nav>
-
-
+    
+    
                 <!-- events -->
-
+    
                 <section id="day_2" class="day_schedule">
                     <article class="event">
                         <div class="speaker round"><img src="./assets/round_face_3.jpg" alt="speaker"></div>
@@ -193,8 +191,8 @@
                         </div>
                     </article>
                     <article class="event">
-                        <div class="speaker round"><img src="./assets/round_face_2.jpg" alt="speaker"></div>
-                        <div class="presentation box">
+                        <div class="speaker_round"><img src="./assets/round_face_2.jpg" alt="speaker"></div>
+                        <div class="presentation_box">
                             <div class="ribbon-right"><span>8 PM - 9 PM</span></div>
                             <figure>
                                 <img src="./assets/desktop_man.jpg" alt="presentation slide">
@@ -213,19 +211,23 @@
                         </div>
                     </article>
                 </section>
+            </div>
 
-            </section>
+        </section>
 
-            <section id="Signup_now"></section>
+        <section id="Signup_now"></section>
 
-            <section id="our_blog">
+        <section id="our_blog">
 
-            </section>
+        </section>
 
 
-            <section id="book_now">
+        <section id="book_now">
+            <div class="base_container">
                 <img src="./assets/open_space.jpg" alt="open space">
-                <form action="submit">
+                <form action="submit" class="base_padding">
+                    <h2>book a seat now</h2>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that i</p>
                     
                     <input type="text" id="name" placeholder="Your name *">
                     <input type="text" id="email" placeholder="Your email *">
@@ -234,34 +236,81 @@
                     <button type="button" id="send_message">send message</button>
                 </form>
 
-            </section>
+            </div>  
+        </section>
 
-            <section id="map">
+        <section id="map">
+            <div class="base_container">
                 <img src="./assets/map.png" alt="map">
-                <article hidden>
+                <article>
                     <img src="./assets/castle.jpg" alt="castel">
-                    <h6></h6>
+                    <h6>location</h6>
+                    <p>Nobinagar Savar, Dhaka</p>
                 </article>
 
-            </section>
+            </div> 
+        </section>
 
         </section>
     </main>
     <footer>
-        <nav class="grey-box">
-            <div class="w1368">
+        <nav>
+            <div class="base_container base_padding flex_row">
+                <div>
+                    <h3>about two PROJECT</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna erat volutpat</p>
+                    <address>
+                            Nobinagar Savar DHAKA
+                            (+88 01928737807    +88 01777418373
+                            quickmasud@gmail.com
+                    </address>
+                </div>
+                
+                <div>
+                    <h3>support</h3>
+                    <ul>
+                        <li><a href="#">Visit to Forum</a></li>
+                        <li><a href="#">Ticket Support</a></li>
+                        <li><a href="#">Send us an</a></li>
+                        <li><a href="#">F.A.Q.s</a></li>
+                        <li><a href="#">Our policy</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>information</h3>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">F.A.Q.s</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Our blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>newsletter</h3>
+                    <p>Signup to receive our interesting news.<br> We never send spam!</p>
+                    <form>
+                        <input type="text" placeholder="Your email...">
+                        <input type="button" value="">
+
+                    </form>
+                </div>
                 
             </div>
         </nav>
-        <nav class="dark-grey-box">
-            <div id="copyright">All Right Reserved. Designed by Masud Rana</div>
-            <ul id="social">
-                <li id=""><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li id=""><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li id=""><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                <li id=""><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                <li id=""><a href="#"><i class="fab fa-instagram"></i></a></li>
-            </ul>
+        <nav>
+            <div class="base_container base_padding flex_row">
+                <div id="copyright">All Right Reserved. Designed by Masud Rana</div>
+                <ul id="social">
+                    <li id=""><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li id=""><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li id=""><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                    <li id=""><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li id=""><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
         </nav>
     </footer>
 </body>

@@ -30,7 +30,6 @@ footer,header,hgroup,menu,nav,section {
 /* end of CSS reset */
 
 
-
 :root {
     --links-active-blue: #03a9f4; /* hover and active links */
     --text-dark-grey: #212121; /* nav text */
@@ -47,23 +46,12 @@ footer,header,hgroup,menu,nav,section {
     font-family: OpenSans;
 }
 
-.base_width {
-    max-width: 1368px;
-}
-
 .relative {
     position: relative;
 }
 
 .absolute {
     position: absolute;
-}
-
-section {
-    position: relative;
-    max-width: 1368px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 a {
@@ -74,12 +62,24 @@ li {
     list-style-type: none;
 }
 
+h3 {
+    text-transform: uppercase;
+}
+
 .button {
-    display: block;
+    display: inline-block;
     text-align: center;
     border-width: 1px;
     border-style: solid;
     text-transform: uppercase;
+}
+
+header > div.base_padding {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 112px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #start_your_project .button {
@@ -87,21 +87,17 @@ li {
     color: #ffffff;
     font-size: 15px;
     font-weight: 600;
-    line-height: 26px; 
     text-align: center;
     padding: 15px;
     width: 156px;
     height: 50px;
-}
-
-#start_your_project .button a {
-    display: block;
-    width: 100%;
-    height: 100%;
+    margin-left: 17px;
+    margin-right: 17px;
 }
 
 #start_your_project {
     text-transform: uppercase;
+    position: relative;
 }
 
 #start_your_project .center-container {
@@ -111,25 +107,46 @@ li {
     transform: translate(-50%, -50%);
 }
 
-.flex {
+.flex_row {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+}
+
+.flex_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_space_between {
+    justify-content: space-between;
+}
+
+#start_your_project h2 {
+    color: #ffffff;
+    text-align: center;   
+    font-size: 70px;
+    font-weight: 700;
 }
 
 #start_your_project h3 {
+    position: relative;
     color: #ffffff;
     font-size: 40px;
     font-weight: 600;
-    line-height: 21px;
-    text-align: center;    
+    text-align: center;
+    margin-bottom: 60px;
 }
 
 #start_your_project h3:after {
+    content: "";
+    position: absolute;
+    bottom: -55px;
     display: block;
     background-color: var(--horizontal-line);
     width: 70px;
     height: 3px;
+    left: 50%;
+    transform: translateX(-50%);
     }
 
 #start_your_project img {
@@ -148,6 +165,11 @@ li {
     color: #ffffff;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 60px;
+}
+
+#countdown + div {
+    text-align: center;
 }
 
 #countdown tr:first-of-type td:nth-of-type(even) {
@@ -163,22 +185,23 @@ li {
     text-align: center;
 }
 
-.button:hover {
+#start_your_project .button:hover {
     background-color: var(--links-active-blue);
     color: #ffffff;
-    border: 0;
+    border-color: var(--links-active-blue);
 }
 
-.header-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.base_container {
     margin-left: auto;
     margin-right: auto;
+    max-width: 1368px;
+}
+
+.base_padding {
     padding-left: 100px;
     padding-right: 100px;
-    max-width: 1368px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 img[alt="collegues"] {
@@ -200,7 +223,8 @@ img[alt="collegues"] {
     width: 30%;
 }
 
-#about_our_project h3 {
+#about_our_project h2 {
+    position: relative;
     color: #000000;
     font-size: 30px;
     font-weight: 700;
@@ -208,42 +232,48 @@ img[alt="collegues"] {
     text-align: left;
     text-transform: uppercase;
     margin-top: 80px;
+    margin-bottom: 66px;
 }
 
-#about_our_project h3:after {
+#about_our_project h2:after {
+    position: absolute;
+    content: "";
     display: block;
     background-color: var(--horizontal-line);
     width: 60px;
     height: 1px;
-    margin-top: 25px;
     margin-left: 0;
+    bottom: -33px;
     }
 
-#about_our_projec strong {
-
+#about_our_project strong {
+    display: block;
+    color: #666666;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 30px;
     }
 
-#about_our_projec p {
-        
+#about_our_project p {
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 24px;
     }
 
 
 #see_our_project li {
-    width: 33%;
+    width: 400px;
+    height: 200px;
 }
 
 .center-container {
     position: relative;
     white-space: nowrap;
-}
-
-.center-container h2 {
-
-    color: #ffffff;
-    font-size: 70px;
-    font-weight: 700;
-    line-height: 150px;
-    text-align: center;
 }
 
 .icon {
@@ -254,8 +284,8 @@ img[alt="collegues"] {
     position: relative;
     border-radius: 50%;
     background-color: var(--links-active-blue);
-    width: 83px;
-    height: 83px;
+    width: 80px;
+    height: 80px;
 }
 
 .round_button img {
@@ -281,7 +311,6 @@ nav {
 
 nav ul li {
     display: inline-block;
-    padding: 9px;
     }
 
 nav ul li:hover {
@@ -298,6 +327,11 @@ ul li a {
     color: var(--text-dark-grey);
 }
 
+header a {
+    padding: 7px 15px;
+    line-height: 28px;
+}
+
 #logo a {
     color: var(--text-dark-grey);
     font-size: 25px;
@@ -308,18 +342,7 @@ ul li a {
     width: 13px;
 }
 
-
 /*  footer */
-
-.grey-box {
-    background-color: var(--background-grey);
-    
-}
-
-.dark-grey-box {
-    background-color: var(--background-dark-grey);
-    color: var(--text-light-grey);
-}
 
 #social i {
     filter: brightness(500%);
@@ -331,6 +354,10 @@ ul li a {
     padding: 15px;
 }
 
+.head_shot_with_contacts {
+    width: 370px;
+    height: 415px;
+}
 
 /* ribbon */
 
@@ -387,3 +414,141 @@ ul li a {
   }
 
   /* end of ribbon */
+
+  #our_member {
+    width: 100%;
+    margin: 0;
+    background-color: #343131;
+    height: 753px;
+  }
+
+
+  .speaker_round {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+
+  }
+
+.presentation_box {
+}
+
+#our_member h2 {
+    position: relative;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: center;
+    margin-bottom: 85px;
+}
+
+#our_member h2::after {
+    content: "";
+    position: absolute;
+    background-color: var(--horizontal-line);
+    width: 60px;
+    height: 2px;
+    bottom: -10px;
+}
+
+.head_shot_with_contacts {
+    position: relative;
+}
+
+.head_shot_with_contacts:hover img {
+    filter: brightness(50%);
+}
+
+.head_shot_with_contacts figcaption {
+    display: none;
+    position: absolute;
+    left: 18px;
+    bottom: 27px;
+}
+
+.head_shot_with_contacts h6 {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.head_shot_with_contacts p {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 42px;
+}
+
+.head_shot_with_contacts p:after {
+    content: "";
+    display: inline-block;
+    height: 5px;
+    width: 30px;
+    background-color: #ffffff;
+}
+
+
+.head_shot_with_contacts figcaption li {
+    display: inline;
+    margin-right: 13px;
+}
+
+.head_shot_with_contacts:hover figcaption {
+    display: block;
+}
+
+.head_shot_with_contacts:hover figcaption i {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+}
+
+.head_shot_with_contacts:hover figcaption i:hover {
+    color: var(--links-active-blue);
+}
+
+    #map > div {
+        position: relative;
+  }
+    #map article {
+        position: absolute;
+        top: 216px;
+        left: 750px;
+        background-color: #ffffff;
+        box-shadow: 2px 4px 20px 0px rgba(0, 0, 0, 0.3);
+        width: 260px;
+        height: 100px;
+    }
+
+
+  footer nav:first-of-type {
+    background-color: #333333;
+  }
+
+  footer nav:last-of-type {
+    background-color: #262626;
+    height: 55px;
+  }
+
+  footer nav:last-of-type > div {
+    padding-top: 0;
+    padding-bottom: 0;
+    }
+
+  #copyright {
+    font-family: OpenSans;
+    color: #999999;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: left;
+  }
