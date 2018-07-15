@@ -174,8 +174,8 @@ header > div.base_padding {
 
 #countdown tr:first-of-type td:nth-of-type(even) {
     font-size: 70px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #countdown tr:last-of-type td {
@@ -340,6 +340,65 @@ header a {
 
 #search img {
     width: 13px;
+}
+
+#our_projects {
+    height: 639px;
+    background-color: var(--background-light-grey);
+}
+
+#see_our_project {
+    position: relative;
+    margin-top: -330px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#video_title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#video_title h2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.play_button {
+    margin-top: 35px;
+}
+
+.circle {
+    position: relative;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 2px;
+    width: 70px;
+    height: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.triangle {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 0; 
+    height: 0; 
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 27px solid #ffffff;
+}
+
+#brands {
+    margin-top: -120px;
 }
 
 /*  footer */
