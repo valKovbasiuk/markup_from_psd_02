@@ -542,6 +542,10 @@ header a {
 
   /* end of ribbon */
 
+  #our_member > div {
+    padding-top: 110px;
+    
+  }
   #our_member {
     width: 100%;
     margin: 0;
@@ -566,7 +570,7 @@ header a {
     color: #ffffff;
     font-size: 30px;
     font-weight: 600;
-    line-height: 21px;
+    line-height: 23px;
     text-align: center;
     margin-bottom: 85px;
 }
@@ -577,7 +581,9 @@ header a {
     background-color: var(--horizontal-line);
     width: 60px;
     height: 2px;
-    bottom: -10px;
+    bottom: -27px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .head_shot_with_contacts {
@@ -599,26 +605,27 @@ header a {
     color: #ffffff;
     font-size: 16px;
     font-weight: 600;
-    line-height: 30px;
     text-align: left;
     text-transform: uppercase;
 }
 
 .head_shot_with_contacts p {
+    position: relative;
     color: #ffffff;
     font-size: 14px;
     font-weight: 400;
-    line-height: 30px;
     text-align: left;
-    margin-bottom: 42px;
+    margin-bottom: 40px;
 }
 
 .head_shot_with_contacts p:after {
+    position: absolute;
     content: "";
-    display: inline-block;
-    height: 5px;
-    width: 30px;
+    height: 2px;
+    width: 35px;
     background-color: #ffffff;
+    left: 0;
+    bottom: -20px;
 }
 
 
