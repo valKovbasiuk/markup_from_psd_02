@@ -36,15 +36,16 @@ footer,header,hgroup,menu,nav,section {
 /* end of CSS reset */
 
 :root {
+    --brightest-color: #ffffff;
     --links-active-blue: #03a9f4; /* hover and active links */
     --text-dark-grey: #212121; /* nav text */
     --text-grey: #666666;
     --text-light-grey: #999999;
     --horizontal-line: #29cadf;
-    --background-grey : #333333; /* lighter grey for footer */
+    --background-grey: #333333; /* lighter grey for footer */
     --background-dark-grey: #343131; /* footer */
-    --background-grey: #f8f4f4; /* header */
     --background-light-grey: #f8f8f8;
+    --darkest-color: #000000
 }
 
 :root {
@@ -78,7 +79,7 @@ h3 {
     border-style: solid;
     text-transform: uppercase;
     border-color: #eaeaea;
-    color: #ffffff;
+    color: var(--brightest-color);
     font-size: 15px;
     font-weight: 600;
     text-align: center;
@@ -124,7 +125,7 @@ header > div.base_padding {
 }
 
 #start_your_project h2 {
-    color: #ffffff;
+    color: var(--brightest-color);
     text-align: center;   
     font-size: 70px;
     font-weight: 700;
@@ -132,7 +133,7 @@ header > div.base_padding {
 
 #start_your_project h3 {
     position: relative;
-    color: #ffffff;
+    color: var(--brightest-color);
     font-size: 40px;
     font-weight: 600;
     text-align: center;
@@ -163,7 +164,7 @@ header > div.base_padding {
 }
 
 #countdown {
-    color: #ffffff;
+    color: var(--brightest-color);
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
@@ -188,7 +189,7 @@ header > div.base_padding {
 
 .button:hover {
     background-color: var(--links-active-blue);
-    color: #ffffff;
+    color: var(--brightest-color);
     border-color: var(--links-active-blue);
 }
 
@@ -226,7 +227,7 @@ img[alt="collegues"] {
 
 #about_our_project h2 {
     position: relative;
-    color: #000000;
+    color: var(--darkest-color);
     font-size: 30px;
     font-weight: 700;
     line-height: 21px;
@@ -242,7 +243,7 @@ img[alt="collegues"] {
     display: block;
     background-color: var(--horizontal-line);
     width: 60px;
-    height: 1px;
+    height: 2px;
     margin-left: 0;
     bottom: -33px;
     }
@@ -290,7 +291,7 @@ img[alt="collegues"] {
 }
 
 .round_button i {
-    color: #ffffff;
+    color: var(--brightest-color);
     font-size: 24px;
     /* filter: invert(100%); */
     position: absolute;
@@ -310,7 +311,7 @@ img[alt="collegues"] {
 
 header {
     height: 112px;
-    background-color: var(--background-grey);
+    background-color: #f8f4f4;
 }
 
 header .header-container {
@@ -331,7 +332,7 @@ header nav ul li:hover,
         }
 
 header nav ul li:hover a {
-    color: var(--background-grey);
+    color: var(--background-light-grey);
 
 }
 
@@ -370,7 +371,7 @@ header a {
 }
 
 #our_projects h6 {
-    color: #000000;
+    color: var(--darkest-color);
     font-size: 14px;
     font-weight: 600;
     line-height: 24px;
@@ -408,7 +409,7 @@ header a {
 }
 
 #video_title h2 {
-    color: #ffffff;
+    color: var(--brightest-color);
     font-size: 30px;
     font-weight: 600;
     text-align: center;
@@ -420,7 +421,7 @@ header a {
     position: relative;
     border-radius: 50%;
     border-style: solid;
-    border-color: #ffffff;
+    border-color: var(--brightest-color);
     border-width: 2px;
     width: 70px;
     height: 70px;
@@ -435,7 +436,7 @@ header a {
     height: 0; 
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-left: 27px solid #ffffff;
+    border-left: 27px solid var(--brightest-color);
 }
 
 #brands {
@@ -491,7 +492,7 @@ header a {
     max-width: 600px;
     width: 90%;
     height: 400px;
-    background: #fff;
+    background: var(--brightest-color);
   }
   
   .ribbon-left {
@@ -514,7 +515,7 @@ header a {
     width: 225px;
     padding: 15px 0;
     background-color: var(--links-active-blue);
-    color: #fff;
+    color: var(--brightest-color);
     font: 700 18px/1 'Lato', sans-serif;
     text-transform: uppercase;
     text-align: center;
@@ -529,7 +530,7 @@ header a {
     width: 225px;
     padding: 15px 0;
     background-color: var(--links-active-blue);
-    color: #fff;
+    color: var(--brightest-color);
     font: 700 18px/1 'Lato', sans-serif;
     text-transform: uppercase;
     text-align: center;
@@ -547,14 +548,14 @@ header a {
   #our_member {
     width: 100%;
     margin: 0;
-    background-color: #343131;
+    background-color: var(--background-dark-grey);
     height: 753px;
   }
 
   #our_member h2 {
     position: relative;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--brightest-color);
     font-size: 30px;
     font-weight: 600;
     line-height: 23px;
@@ -589,7 +590,7 @@ header a {
 }
 
 .head_shot_with_contacts h6 {
-    color: #ffffff;
+    color: var(--brightest-color);
     font-size: 16px;
     font-weight: 600;
     text-align: left;
@@ -598,7 +599,7 @@ header a {
 
 .head_shot_with_contacts p {
     position: relative;
-    color: #ffffff;
+    color: var(--brightest-color);
     font-size: 14px;
     font-weight: 400;
     text-align: left;
@@ -610,7 +611,7 @@ header a {
     content: "";
     height: 2px;
     width: 35px;
-    background-color: #ffffff;
+    background-color: var(--brightest-color);
     left: 0;
     bottom: -20px;
 }
@@ -626,7 +627,7 @@ header a {
 }
 
 .head_shot_with_contacts:hover figcaption i {
-    color: #ffffff;
+    color: var(--brightest-color);
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
@@ -653,7 +654,7 @@ header a {
 }
 
 #days_nav .button {
-    color: #000000;
+    color: var(--darkest-color);
     font-size: 14px;
     width: 98px;
     height: 39px;
@@ -662,17 +663,20 @@ header a {
     line-height: 37px;
 }
 
+#day_1, #day_3 {
+    display: none;
+}
 
 #days_nav .button:hover,
 #days_nav .button.active  {
-    color: #ffffff;
+    color: var(--brightest-color);
 }
 
 #project_schedule h2,
 #our_blog h2,
 #book_now h2 {
     position: relative;
-    color: #000000;
+    color: var(--darkest-color);
     font-size: 30px;
     font-weight: 600;
     text-align: center;
@@ -744,7 +748,7 @@ header a {
 .presentation_box {
     position: absolute;
     width: 500px;
-    background-color: #ffffff;
+    background-color: var(--brightest-color);
 }
 
 .event:nth-of-type(even) .presentation_box {
@@ -761,7 +765,7 @@ header a {
 }
 
 h4 {
-    color: #000000;
+    color: var(--darkest-color);
     font-size: 16px;
     font-weight: 600;
     line-height: 21px;
@@ -772,7 +776,7 @@ h4 {
 }
 
 .presentation_box p {
-    color: #666666;
+    color: var(--text-grey);
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -785,10 +789,10 @@ h4 {
 
 #next_day .button,
 #book_now button {
-    background-color: #03a9f4;
+    background-color: var(--links-active-blue);
     width: 171px;
     height: 43px;
-    color: #ffffff;
+    color: var(--brightest-color);
     font-size: 13px;
     font-weight: 600;
     line-height: 13px;
@@ -808,7 +812,7 @@ h4 {
 
 #signup_now strong {
     left: 100px;
-    color: #ffffff;
+    color: var(--brightest-color);
     font-size: 20px;
     font-weight: 600;
     line-height: 25px;
@@ -829,7 +833,7 @@ h4 {
 }
 
 #our_blog figcaption {
-color: #999999;
+color: var(--text-light-grey);
 font-size: 12px;
 font-weight: 400;
 text-align: left;
@@ -860,7 +864,7 @@ line-height: 12px;
 
 #our_blog article p {
     font-family: Myriad Pro, OpenSans;
-    color: #666666;
+    color: var(--text-grey);
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -899,7 +903,7 @@ line-height: 12px;
 
 
 #book_now p {
-    color: #666666;
+    color: var(--text-grey);
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -960,7 +964,7 @@ line-height: 12px;
     position: absolute;
     top: 216px;
     left: 750px;
-    background-color: #ffffff;
+    background-color: var(--brightest-color);
     box-shadow: 2px 4px 20px 0px rgba(0, 0, 0, 0.3);
     width: 260px;
     height: 100px;
@@ -974,7 +978,7 @@ line-height: 12px;
     position: absolute;
     top: 23px;
     left: 116px;
-    color: #000000;
+    color: var(--darkest-color);
     font-size: 12px;
     font-weight: 600;
     line-height: 17px;
@@ -986,7 +990,7 @@ line-height: 12px;
     position: absolute;
     top: 48px;
     left: 116px;
-    color: #666666;
+    color: var(--text-grey);
     font-size: 12px;
     font-weight: 400;
     line-height: 20px;
@@ -1054,7 +1058,7 @@ address i {
 }
 
 #upper_footer h3 {
-    color: #ffffff;
+    color: var(--brightest-color);
     font-size: 16px;
     font-weight: 600;
     line-height: 27px;
@@ -1067,7 +1071,7 @@ address i {
 }
 
 #upper_footer ul li:hover a {
-    color: #ffffff;    
+    color: var(--brightest-color);    
 }
 
 
@@ -1106,17 +1110,16 @@ address i {
 form .fas.fa-long-arrow-alt-right {
     display: block;
     position: absolute;
-    color: #ffffff;
+    color: var(--brightest-color);
     font-size: 28px;
     line-height: 22px;
     text-align: center;
-    top: 50%;
-    right: 23px;
-    transform: translate(-50%, -50%);
+    top: 10px;
+    right: 9px;
 }
 
 footer nav:first-of-type {
-    background-color: #333333;
+    background-color: var(--background-grey);
 }
 
 footer nav:last-of-type {
@@ -1134,7 +1137,7 @@ footer nav:last-of-type > div {
 
 #copyright {
     font-family: OpenSans;
-    color: #999999;
+    color: var(--text-light-grey);
     font-size: 14px;
     font-weight: 600;
     line-height: 27px;
