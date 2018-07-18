@@ -439,9 +439,6 @@ header a {
     border-left: 27px solid var(--brightest-color);
 }
 
-#brands {
-}
-
 #brands ul {
     flex-wrap: wrap;
     justify-content: center;
