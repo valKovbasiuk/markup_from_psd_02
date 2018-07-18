@@ -1,9 +1,3 @@
-@font-face {
-    font-family: "Myriad Pro";
-    src: url(./assets/MyriadPro-Regular.woff);
-}
-
-
 /* CSS reset */
 
 html, body, div, span, applet, object, iframe,
@@ -860,7 +854,6 @@ line-height: 12px;
 }
 
 #our_blog article p {
-    font-family: Myriad Pro, OpenSans;
     color: var(--text-grey);
     font-size: 14px;
     font-weight: 400;
