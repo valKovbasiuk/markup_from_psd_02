@@ -62,6 +62,10 @@ li {
     list-style-type: none;
 }
 
+h2 {
+    line-height: 1.3;
+}
+
 h3 {
     text-transform: uppercase;
 }
@@ -82,6 +86,7 @@ h3 {
     height: 50px;
     margin-left: 17px;
     margin-right: 17px;
+    cursor: pointer;
 }
 
 header > div.base_padding {
@@ -92,40 +97,30 @@ header > div.base_padding {
     justify-content: space-between;
 }
 
+.search:hover img {
+    filter: invert(100%);
+}
+
 #start_your_project {
+
+    /* experimental */
+    /* background-image: url('../assets/face_to_face.jpg');
+    background-position: center top;
+    height: 772px; */
+
+
+    /* experimental */
     text-transform: uppercase;
     position: relative;
 }
 
-/* fade in */
-#countdown {
-    animation: fadein 3s;
-    -moz-animation: fadein 3s; /* Firefox */
-    -webkit-animation: fadein 3s; /* Safari and Chrome */
-    -o-animation: fadein 3s; /* Opera */
-}
-@keyframes fadein {
-    0% {opacity: 0;}
-    50% {opacity: 0;}
-    100% {opacity: 1;}
-}
-@-moz-keyframes fadein { /* Firefox */
-    0% {opacity: 0;}
-    50% {opacity: 0;}
-    100% {opacity: 1;}    
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    0% {opacity: 0;}
-    50% {opacity: 0;}
-    100% {opacity: 1;}
-}
-@-o-keyframes fadein { /* Opera */
-    0% {opacity: 0;}
-    50% {opacity: 0;}
-    100% {opacity: 1;}
-}
-/* end of fade in */
-
+/* #start_your_project:after {
+    content: "";
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0; 
+    background: rgba(0,0,0,0.2);
+    pointer-events: none;
+  } */
 
 #start_your_project .center-container {
     position: absolute;
@@ -137,6 +132,7 @@ header > div.base_padding {
 .flex_row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .flex_column {
@@ -145,7 +141,13 @@ header > div.base_padding {
 }
 
 .flex_space_between {
+    display: flex;
     justify-content: space-between;
+}
+
+.flex_space_around {
+    display: flex;
+    justify-content: space-around;
 }
 
 #start_your_project h2 {
@@ -187,29 +189,58 @@ header > div.base_padding {
     text-align: center;
 }
 
-#countdown {
+.countdown {
     color: var(--brightest-color);
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
 }
 
-#countdown + div {
+.countdown + div {
     text-align: center;
 }
 
-#countdown tr:first-of-type td:nth-of-type(even) {
+.countdown tr:first-of-type td:nth-of-type(even) {
     font-size: 70px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-#countdown tr:last-of-type td {
+.countdown tr:last-of-type td {
     font-family: OpenSans;
     font-size: 14px;
     font-weight: 400;
     text-align: center;
 }
+
+/* fade in */
+.countdown {
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+@keyframes fadein {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@-moz-keyframes fadein { /* Firefox */
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}    
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@-o-keyframes fadein { /* Opera */
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+/* end of fade in */
 
 .button:hover {
     background-color: var(--links-active-blue);
@@ -236,28 +267,30 @@ img[alt="collegues"] {
 
 #about_our_project {
     margin-top: -140px;
-    padding-left: 100px;
-    padding-top: 80px;
+    /* padding-left: 100px; */
+    /* padding-top: 80px; */
 }
 
-#about_our_project article > div:first-of-type {
-    width: 70%;
-    padding-right: 100px;
+.text_with_h2 {
+    /* width: 70%; */
+    max-width: 700px;
+    min-width: 320px;
+    /* padding-right: 100px; */
 }
 
-#about_our_project article > div:last-of-type {
+/* #about_our_project article > div:last-of-type {
     width: 30%;
-}
+} */
 
 #about_our_project h2 {
     position: relative;
     color: var(--darkest-color);
     font-size: 30px;
     font-weight: 700;
-    line-height: 21px;
+    /* line-height: 21px; */
     text-align: left;
     text-transform: uppercase;
-    margin-top: 80px;
+    margin-top: 30px;
     margin-bottom: 66px;
 }
 
@@ -281,6 +314,17 @@ img[alt="collegues"] {
     text-align: left;
     margin-bottom: 30px;
     }
+
+.illustration_right {
+    position: relative;
+    width: 300px;
+    height: 540px;
+}
+
+.illustration_right figure {
+    position: absolute;
+    right: 0;
+}
 
 #about_our_project p {
     color: var(--text-grey);
@@ -570,7 +614,7 @@ header a {
     width: 100%;
     margin: 0;
     background-color: var(--background-dark-grey);
-    height: 753px;
+    min-height: 753px;
   }
 
   #our_member h2 {
@@ -579,7 +623,7 @@ header a {
     color: var(--brightest-color);
     font-size: 30px;
     font-weight: 600;
-    line-height: 23px;
+    /* line-height: 23px; */
     text-align: center;
     margin-bottom: 85px;
 }
@@ -684,13 +728,17 @@ header a {
     line-height: 37px;
 }
 
-#day_1, #day_3 {
+.hidden {
     display: none;
 }
 
 #days_nav .button:hover,
 #days_nav .button.active  {
     color: var(--brightest-color);
+}
+
+#days_nav .button.active {
+    cursor: default ;
 }
 
 #project_schedule h2,
@@ -703,7 +751,7 @@ header a {
     text-align: center;
     margin-bottom: 81px;
     text-transform: uppercase;
-    line-height: 22px;
+    /* line-height: 22px; */
 }
 
 #project_schedule h2:after,
@@ -1061,7 +1109,7 @@ address i {
 
 
 #upper_footer section:nth-of-type(1) {
-    width: 500px;
+    width: 445px;
 }
 
 #upper_footer section:nth-of-type(2) {
@@ -1184,3 +1232,34 @@ footer {
 #map {
     margin-top: -2px;
 }
+
+@media only screen and (max-width: 1367px) {
+
+.base_padding {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+.text_with_h2 {
+    max-width: 450px;
+}
+
+
+
+} /* end of @media only screen and (max-width: 1367px)  */
+
+@media only screen and (max-width: 768px) {
+
+.illustration_right {
+    display: none;
+}
+
+}  /* end of @media only screen and (max-width: 767px)  */
+
+
+
+
+
