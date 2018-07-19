@@ -7,6 +7,10 @@
     <title>Your project</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -21,13 +25,13 @@
                     <li><a href="#">portfolio</a></li>
                     <li><a href="#">contact</a></li>
                     <li><a href="#">shop</a></li>
-                    <li id="search"><a href="#"><img class="icon" src="./assets/search-solid.svg" alt="search" data-copyright="fontawesome.com"></a></li>
+                    <li id="search" class="search"><a href="#"><img class="icon" src="./assets/search-solid.svg" alt="search" data-copyright="fontawesome.com"></a></li>
                 </ul>
             </nav>
         </div>   
     </header>
     <main>
-        <section id="start_your_project" class="base_container">
+        <section id="start_your_project" class="base_container start_your_project full_width_pic">
             <img src="./assets/face_to_face.jpg" alt="collegues">
             <div class="center-container">
                 <h2>start your project</h2>
@@ -43,7 +47,7 @@
                         <td>:</td>
                         <td id="secs" class="digits seconds"></td>
                     </tr>
-                    <tr id="names">
+                    <tr id="names" class="names">
                         <td>days</td>
                         <td></td>
                         <td>hours</td>
@@ -62,22 +66,22 @@
             </div>
         </section>
 
-        <section class="base_container base_padding flex_row" id="about_our_project">
-            <article class="flex_row">
-                <div>
+        <section class="" id="about_our_project">
+            <article class="base_container base_padding about_our_project flex_row flex_space_between">
+                <div class="text_with_h2">
                     <h2>About our project</h2>
                     <strong>We are here to make your dream comes true by your own way.</strong>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim augue.</p>
                     <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis seacula quarta decima decima sollemnes in futurum.</p>
                 </div>
-                <div>
+                <div class="illustration_right">
                     <figure>
                         <img src="./assets/standing_man.png" alt="">
                     </figure>
                 </div>
             </article>            
         </section>
-        <section class="" id="our_projects">
+        <section class="our_projects" id="our_projects">
             <ul class="base_container base_padding flex_row">
                 <li class="flex_column"><a class="round_button" href="#"><i class="fas fa-microphone"></i></a>
                 <h6>time to project</h6><p>August 30th 2017 at 7 p.m.</p>
@@ -94,11 +98,11 @@
             </ul>
         </section>
 
-        <section id="see_our_project" class="base_container base_padding">
+        <section id="see_our_project" class="base_container base_padding see_our_project">
                 <div>
                     <img src="./assets/presentation_man.png" alt="video">
                     
-                    <div id="video_title">
+                    <div id="video_title" class="video_title">
                         <h2>see our project</h2>
                         <a class="round" href="#">
                             <div class="circle play_button">
@@ -109,7 +113,7 @@
                 </div>                    
         </section>
 
-        <section id="brands">
+        <section id="brands" class="brands">
                 <ul class="base_container base_padding flex_row">
                     <li><a href="#"><img src="./assets/logo_1.png" alt="project logo"></a></li>
                     <li><a href="#"><img src="./assets/logo_2.png" alt="project logo"></a></li>
@@ -177,17 +181,44 @@
         </section>
 
 
-        <section id="project_schedule">
+        <section id="project_schedule" class="project_schedule">
             <div class="base_container base_padding">
                 <h2>PROJECT SCHEDULE</h2>
                 <!-- days -->
-                <nav id="days_nav">
+                <nav id="days_nav" class="days_nav">
                     <ul class="flex_row">
-                        <li><a class="button" href="#">day 1</a></li>
-                        <li><a class="button active" href="#">day 2</a></li>
-                        <li><a class="button" href="#">day 3</a></li>
+                        <li class="button active">day 1</li>
+                        <li class="button">day 2</li>
+                        <li class="button">day 3</li>
+                        <!-- <li><a class="button active" href="#">day 2</a></li>
+                        <li><a class="button" href="#">day 3</a></li> -->
                     </ul>
                 </nav>
+
+                <script>
+                $(".button").click(function (e) {
+                    $(".button.active").removeClass("active");
+                    $(this).addClass("active");
+                    });
+
+                $("#days_nav>ul>.button:nth-of-type(1)").click(function (e) {
+                    $("#day_1").removeClass("hidden");
+                    $("#day_2").addClass("hidden");
+                    $("#day_3").addClass("hidden");                    
+                });
+
+                $("#days_nav>ul>.button:nth-of-type(2)").click(function (e) {
+                    $("#day_2").removeClass("hidden");
+                    $("#day_1").addClass("hidden");
+                    $("#day_3").addClass("hidden");                    
+                });
+
+                $("#days_nav>ul>.button:nth-of-type(3)").click(function (e) {
+                    $("#day_3").removeClass("hidden");
+                    $("#day_1").addClass("hidden");
+                    $("#day_2").addClass("hidden");                    
+                });
+                </script>
     
     
                 <!-- events -->
@@ -224,23 +255,23 @@
                         </div>
                     </article>
                 </section>
-                <section id="day_2" class="day_schedule">
+                <section id="day_2" class="day_schedule hidden">
                     <article class="event">
-                        <div class="speaker round"><img src="./assets/round_face_3.jpg" alt="speaker"></div>
+                        <div class="speaker round"><img src="./assets/round_face_2.jpg" alt="speaker"></div>
                         <div class="presentation_box">
-                            <div class="ribbon-left"><span>7 PM - 8 PM</span></div>
+                            <div class="ribbon-left"><span>10 AM – 11 AM</span></div>
                             <figure>
-                                <img src="./assets/laptop_man.jpg" alt="presentation slide">
+                                <img src="./assets/desktop_man.jpg" alt="presentation slide">
                                 <figcaption><h4>3 steps to start a start-up company</h4><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has</p></figcaption>
                             </figure>
                         </div>
                     </article>
                     <article class="event">
-                        <div class="speaker round"><img src="./assets/round_face_2.jpg" alt="speaker"></div>
+                        <div class="speaker round"><img src="./assets/round_face_3.jpg" alt="speaker"></div>
                         <div class="presentation_box">
-                            <div class="ribbon-right"><span>8 PM - 9 PM</span></div>
+                            <div class="ribbon-right"><span>11 AM – 12 PM</span></div>
                             <figure>
-                                <img src="./assets/desktop_man.jpg" alt="presentation slide">
+                                <img src="./assets/laptop_man.jpg" alt="presentation slide">
                                 <figcaption><h4>some tip for your trouble</h4><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has</p></figcaption>
                             </figure>
                         </div>
@@ -248,7 +279,7 @@
                     <article class="event">
                         <div class="speaker round"><img src="./assets/round_face_1.jpg" alt="speaker"></div>
                         <div class="presentation_box">
-                            <div class="ribbon-left"><span>9 PM - 10 PM</span></div>
+                            <div class="ribbon-left"><span>12 PM – 01 PM</span></div>
                             <figure>
                                 <img src="./assets/phone_man.jpg" alt="presentation slide">
                                 <figcaption><h4>how to connect people</h4><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has</p></figcaption>
@@ -256,13 +287,13 @@
                         </div>
                     </article>
                 </section>
-                <section id="day_3" class="day_schedule">
+                <section id="day_3" class="day_schedule hidden">
                     <article class="event">
-                        <div class="speaker round"><img src="./assets/round_face_3.jpg" alt="speaker"></div>
+                        <div class="speaker round"><img src="./assets/round_face_1.jpg" alt="speaker"></div>
                         <div class="presentation_box">
-                            <div class="ribbon-left"><span>7 PM - 8 PM</span></div>
+                            <div class="ribbon-left"><span>1 PM – 2 PM</span></div>
                             <figure>
-                                <img src="./assets/laptop_man.jpg" alt="presentation slide">
+                                <img src="./assets/phone_man.jpg" alt="presentation slide">
                                 <figcaption><h4>3 steps to start a start-up company</h4><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has</p></figcaption>
                             </figure>
                         </div>
@@ -270,7 +301,7 @@
                     <article class="event">
                         <div class="speaker round"><img src="./assets/round_face_2.jpg" alt="speaker"></div>
                         <div class="presentation_box">
-                            <div class="ribbon-right"><span>8 PM - 9 PM</span></div>
+                            <div class="ribbon-right"><span>2 PM - 3 PM</span></div>
                             <figure>
                                 <img src="./assets/desktop_man.jpg" alt="presentation slide">
                                 <figcaption><h4>some tip for your trouble</h4><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has</p></figcaption>
@@ -278,11 +309,11 @@
                         </div>
                     </article>
                     <article class="event">
-                        <div class="speaker round"><img src="./assets/round_face_1.jpg" alt="speaker"></div>
+                        <div class="speaker round"><img src="./assets/round_face_3.jpg" alt="speaker"></div>
                         <div class="presentation_box">
                             <div class="ribbon-left"><span>9 PM - 10 PM</span></div>
                             <figure>
-                                <img src="./assets/phone_man.jpg" alt="presentation slide">
+                                <img src="./assets/laptop_man.jpg" alt="presentation slide">
                                 <figcaption><h4>how to connect people</h4><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has</p></figcaption>
                             </figure>
                         </div>
@@ -293,7 +324,7 @@
 
         </section>
 
-        <section id="signup_now">
+        <section id="signup_now" class="signup_now">
             <div class="base_container">
                 <img src="./assets/hands.png" alt="hurry up">
                 <strong>hurry up. the ticket is free with limitted amount!!!</strong>
@@ -301,7 +332,7 @@
             </div>
         </section>
 
-        <section id="our_blog">
+        <section id="our_blog" class="blog">
             <div class="base_container base_padding">
                 <h2>our blog</h2>
                 <div class="flex_row">
@@ -379,12 +410,12 @@
             </div>  
         </section>
 
-        <section id="map">
+        <section id="map" class="full_width_pic">
             <div class="base_container">
                 <img src="./assets/map.png" alt="map">
                 <article>
                     <div>
-                        <img src="./assets/castle.jpg" alt="castel">
+                        <img src="./assets/castle.jpg" alt="castle">
                         <h6>location</h6>
                         <p>Nobinagar Savar, <br>Dhaka</p>
 
