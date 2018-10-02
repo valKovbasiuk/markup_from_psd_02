@@ -40,5 +40,5 @@
   (function () { 
 
     // end date and time of event here
-    countdown('09/09/2018 15:00:00'); 
+    countdown('12/12/2018 15:00:00'); 
   }());
